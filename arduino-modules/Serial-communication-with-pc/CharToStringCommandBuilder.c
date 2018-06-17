@@ -4,17 +4,21 @@
 #include <stdio.h>
 
 char command[4] = { '\0' };
-int len = 0;
+int len = -1;
+long commandNum = 0;
 
 int main () {
     //char garbage;
 
-    while (len <  3) {
+    do {
         printf("\nEnter next character that will be read from serial port: ");
-        scanf(" %c", &command[len++]);
+        scanf(" %c", &command[++len]);
         //scanf("%c", &garbage);
         //fflush(stdin);
     }
+    while (command[len] != '$');
+
+    command[len] = '\0';
 
     printf("\n And the command is: %s\n", command);
 

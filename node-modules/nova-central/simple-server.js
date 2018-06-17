@@ -10,7 +10,7 @@ var app = express();
 var httpServer = http.createServer(app);
 var io = socketIO.listen(httpServer);
 
-app.use(express.static((__dirname, 'public')));
+app.use(express.static((__dirname, 'www')));
 
 httpServer.listen(process.env.PORT || 9090, function() {
     console.log('Server listening at ' + (process.env.PORT || 9090));
