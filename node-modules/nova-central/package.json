@@ -1,0 +1,16 @@
+{
+  "name": "nova-central",
+  "version": "1.0.0",
+  "description": "The central server to act between mobile and arduino",
+  "main": "simple-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suman Barick",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "serialport": "^4.0.7",
+    "socket.io": "^2.0.3"
+  }
+}
