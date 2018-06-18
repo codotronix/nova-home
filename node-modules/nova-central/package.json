@@ -1,16 +1,25 @@
 {
   "name": "nova-central",
   "version": "1.0.0",
-  "description": "The central server to act between mobile and arduino",
+  "description": "The central server to receive command from mobile and act accordingly",
   "main": "simple-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Suman Barick",
   "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "lite-server": "^2.3.0"
+  },
   "dependencies": {
     "express": "^4.15.3",
     "serialport": "^4.0.7",
-    "socket.io": "^2.0.3"
+    "socket.io": "^2.0.3",
+    "crypto-js": "^3.1.9-1",
+    "gulp-javascript-obfuscator": "^1.1.2"
   }
 }

@@ -1,0 +1,24 @@
+{
+    "menuItems": [
+        {
+            "name": "Keyboard",
+            "icon": "fa fa-graduation-cap",
+            "url": "#!/learn"
+        },
+        {
+            "name": "Nova Home",
+            "icon": "fa fa-graduation-cap",
+            "url": "#!/learn"
+        },
+        {
+            "name": "Empty",
+            "icon": "fa fa-graduation-cap",
+            "url": ""
+        },
+        {
+            "name": "Empty",
+            "icon": "fa fa-graduation-cap",
+            "url": "#!/learn"
+        }
+    ]
+}
