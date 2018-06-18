@@ -3,7 +3,8 @@ var http = require("http");
 var socketIO = require("socket.io");
 var SerialPort = require('serialport');
 
-var serialport = "/dev/ttyACM0";
+//var serialport = "/dev/ttyACM0";
+var serialport = "COM3";
 var port = new SerialPort(serialport);
 
 var app = express();
