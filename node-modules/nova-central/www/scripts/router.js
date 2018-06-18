@@ -10,6 +10,12 @@
 			controllerAs: "vm"
 		})
 
+		.when("/commands", {
+			templateUrl: "modules/commands/commands.html",
+			controller: "commandsController",
+			controllerAs: "vm"
+		})
+
 		.when("/", {
 			redirectTo: "/home"
 		})

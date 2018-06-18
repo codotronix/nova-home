@@ -24,10 +24,10 @@ io.on('connection', function (socket) {
 
 	socket.on('COMMAND', function (command) {
         console.log("command received = " + command);
-        var c = comms[command.toLowerCase()];
-        if (c !== undefined) {
-          console.log("Will send to arduino " + c);
-          sentToArduino(c);
+        //var c = comms[command.toLowerCase()];
+        if (command !== undefined) {
+          console.log("Will send to arduino " + command);
+          sentToArduino(command);
         }
         //command = command.endsWith("$") ? command : command+"$";
         
@@ -38,7 +38,7 @@ io.on('connection', function (socket) {
 port.on('open', function() {
   console.log("serial port " + serialport + " opened succesfully...");
   setTimeout(function() {
-  	sentToArduino('21$');
+  	sentToArduino('26$');
   }, 2000);
 });
  
@@ -54,20 +54,4 @@ function sentToArduino (comnd) {
 	    }
 	    console.log('sending to serial ' + comnd);
   	});
-}
-
-
-var comms = {
-  "light on": "21$",
-  "light off": "22$",
-  "blue on": "15$",
-  "blue off": "16$",
-  "blew off": "16$",
-  "red on": "17$",
-  "red off": "18$",
-  "rid of": "18$",
-  "green on": "13$",
-  "green off": "14$",
-  "yellow on": "19$",
-  "yellow off": "20$"
 }

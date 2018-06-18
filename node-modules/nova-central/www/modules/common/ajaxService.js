@@ -12,10 +12,7 @@
 		function doGet (url) {
 			var deferred = $q.defer();
 
-			$http.get(url).then(function(res){
-				if(typeof(res.data.enc) !== "undefined") {
-					res.data = JSON.parse(secretService.decipher(res.data.enc));
-				}
+			$http.get(url).then(function(res) {
 				deferred.resolve(res);
 			},
 			function(err){

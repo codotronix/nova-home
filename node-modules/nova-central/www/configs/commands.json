@@ -1,0 +1,108 @@
+{
+    "commands": [
+        {
+        	"name": "Pin 1 ON",
+        	"command": "1$"
+        },
+        {
+        	"name": "Pin 1 OFF",
+        	"command": "2$"
+        },
+        {
+        	"name": "Pin 2 ON",
+        	"command": "3$"
+        },
+        {
+        	"name": "Pin 2 OFF",
+        	"command": "4$"
+        },
+        {
+        	"name": "Pin 3 ON",
+        	"command": "5$"
+        },
+        {
+        	"name": "Pin 3 OFF",
+        	"command": "6$"
+        },
+        {
+        	"name": "Pin 4 ON",
+        	"command": "7$"
+        },
+        {
+        	"name": "Pin 4 OFF",
+        	"command": "8$"
+        },
+        {
+        	"name": "Pin 5 ON",
+        	"command": "9$"
+        },
+        {
+        	"name": "Pin 5 OFF",
+        	"command": "10$"
+        },
+        {
+        	"name": "Pin 6 ON",
+        	"command": "11$"
+        },
+        {
+        	"name": "Pin 6 OFF",
+        	"command": "12$"
+        },
+        {
+        	"name": "Pin 7 ON",
+        	"command": "13$"
+        },
+        {
+        	"name": "Pin 7 OFF",
+        	"command": "14$"
+        },
+        {
+        	"name": "Pin 8 ON",
+        	"command": "15$"
+        },
+        {
+        	"name": "Pin 8 OFF",
+        	"command": "16$"
+        },
+        {
+        	"name": "Pin 9 ON",
+        	"command": "17$"
+        },
+        {
+        	"name": "Pin 9 OFF",
+        	"command": "18$"
+        },
+        {
+        	"name": "Pin 10 ON",
+        	"command": "19$"
+        },
+        {
+        	"name": "Pin 10 OFF",
+        	"command": "20$"
+        },
+        {
+        	"name": "Pin 11 ON",
+        	"command": "21$"
+        },
+        {
+        	"name": "Pin 11 OFF",
+        	"command": "22$"
+        },
+        {
+        	"name": "Pin 12 ON",
+        	"command": "23$"
+        },
+        {
+        	"name": "Pin 12 OFF",
+        	"command": "24$"
+        },
+        {
+        	"name": "Pin 13 ON",
+        	"command": "25$"
+        },
+        {
+        	"name": "Pin 13 OFF",
+        	"command": "26$"
+        }
+    ]
+}
