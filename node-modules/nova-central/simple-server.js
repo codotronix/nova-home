@@ -47,11 +47,28 @@ port.on('error', function(err) {
   console.log('serial port opening error: ', err.message);
 });
 
+var prevWriteInProgress = false;
+
 function sentToArduino (comnd) {
-	port.write(comnd, function(err) {
-	    if (err) {
-	      return console.log('Error on write: ', err.message);
-	    }
-	    console.log('sending to serial ' + comnd);
-  	});
+  if(prevWriteInProgress) {
+    console.log("prevWriteInProgress is true... will try again after 100ms");
+    setTimeout(function() {
+      sentToArduino(comnd);
+    }, 100);
+  }
+  else {
+    prevWriteInProgress = true;
+    port.write(comnd, function(err) {
+      if (err) {
+        return console.log('Error on write: ', err.message);
+      }
+      console.log('sent to serial ' + comnd);
+
+      //wait for another 100ms before next try
+      setTimeout(function(){
+        prevWriteInProgress = false;
+      }, 100);
+    });
+  }
+	
 }
